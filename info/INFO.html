@@ -1,0 +1,73 @@
+<h2>Test 0.20</h2>
+
+<p>This is a test piece of software. If it crashes your computer or corrupts a file
+it's your own fault. I can not and will not be held responsible for such things.</p>
+
+<p>The goal of this software is to create a simple VN engine using Python and the
+Pygame library. It's very basic and should not be used for any serious projects.</p>
+
+<p>All story data is stored in JSON files. All user options can be found in dat/config.sec
+and all non-user changable options can be found in conf.py </p>
+
+<h3>Controls:</h3>
+
+<p>
+<ul>
+<li><b>Right Arrow</b> - Advance Story<br></li>
+<li><b>Left Arrow</b> - Move back in story<br></li>
+<li><b>M</b> - Toggle music on or off<br></li>
+<li><b>S</b> - Saves while in game<br></li>
+<li><b>Q</b> - Quit (No confirmation, just quits immediately)<br></li>
+<li><b>ESC</b> - Return to main menu (Play button to go back to game)</li></ul>
+</p>
+
+
+<h3>Config.sec parameters:</h3>
+
+<p>
+<ul>
+<li><b>gamefps:</b> Accepts an int, is set to 30 by default. I wouldn't set it above 60 though.<br></li>
+<li><b>videofps:</b> Accepts an int, is the FPS the intro and credits/other videos will run at. I'v found using the videos native FPS*2 makes it play smooth.</li>
+<li><b>volume:</b> A number from 0.0 to 1.0. Default is 0.2. Changes in game volume.<br></li>
+</ul></p>
+
+
+<h3>conf.py:</h3>
+
+<p>conf.py houses settings that we don't want the end user messing with. Once built conf.py gets included in the resulting executable file.
+
+There are comments in conf.py describing what each of the settings do. It would be wise
+to keep a backup of this file while working in case you mess something up in it.</p>
+
+<h3>build_win.py</h3>
+
+<p>Used for building the VN on Windows OSs. You should be running Python 2.7 and have
+the latest version of Py2Exe installed in order to use it.
+
+It's important to note this do *not* build an executable for any non-Windows OS.</p>
+
+<h3>Debug mode abbreviations:</h3>
+
+<p>
+<ul>
+<li><b>CS =</b> Current Scene<br></li>
+<li><b>CC =</b> Current Character<br></li>
+<li><b>DN =</b> Sees if the game has been told to go to credits. If you see True in game something is wrong.<br></li>
+<li><b>DM =</b> Shows if Devmode is enabled or not<br></li>
+<li><b>AP =</b> 0 if audio is not playing, 1 if it is.<br></li>
+<li><b>AM =</b> Shows if audio is paused or not<br></li>
+<li><b>AL =</b> Returns current volume</li>
+</ul></p>
+
+<h3>Computer this is dev'd on/confirmed working on:</h3>
+
+<p>Python 2.7.8 32-bit<br>
+Windows 8.1 64-bit<br>
+Geany 1.24<br>
+Sony VGN-FW560D<br>
+ATI Mobility Radeon HD 5640<br>
+Intel Core2Duo P7450 2.13GHz<br>
+6GB RAM
+</p>
+
+If somehow you found this and have any questions contact me: <a href='mailto:compaqxp@gmail.com'>compaqxp@gmail.com</a>, <a href='http://www.skyllama.com'>www.skyllama.com</a>
